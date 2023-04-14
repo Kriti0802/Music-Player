@@ -1,0 +1,155 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+font-family: 'Caveat', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Philosopher&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Concert One', cursive;
+}
+.main_div{
+    height:100vh;
+    width:100vw;
+  /* background-color: #f6f6f6; */
+  /* background-color: rgb(247, 178, 184); */
+  background-color: #f5e0e5;
+  background-image: linear-gradient(45deg, #ff9b9c 0%, #ffd4a7 100%);
+  display: grid;
+  place-items: center;
+}
+.music_container{
+     width: 35rem;
+     height: 55rem;
+     /* background-color: #ffff; */
+     /* background-color: rgb(211, 231, 253); */
+     background-color: #fff6e7;
+     box-shadow: 0 15px 20px 0 #c58371;
+     border-radius: 3rem;
+     /* box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.2); */
+     padding: 2rem;
+     text-align: center;
+}
+.music_container #title{
+    text-transform: uppercase;
+     letter-spacing: 0.2rem;       /*2px */
+     word-spacing: 0.5rem;
+     color: #171717;
+     margin: 2rem 0 0.5rem 0;
+     font-size: 3.5rem;
+     font-weight: 500;
+     text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+    
+}
+.music_container #artist{
+    color: #cccaca;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+}
+.img_container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+ img{   
+     /* add in parent div */
+     /* make the img object fit and circle */
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     object-fit: cover;
+     box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0,0, 0.4);
+ }
+
+.music_controls{
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;    /* for center*/
+  margin-top: 6.5rem;
+  align-items: center;
+}
+.music_controls .fas{     /* fontawesome*/
+ color: black;
+ font-size: 2rem;
+ cursor: pointer;
+ filter: drop-shadow(0 1.2rem 3 rem 0.5rem rgba(0,0,0,0.4));
+}
+.music_controls .main_button{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #111;
+  color: #f6f6f6;
+  /* add display flex to center thr icons */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem; 
+}
+.music_controls .fas:hover
+{
+    color: grey;
+}
+.music_controls .fa-play:hover{
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0,0,0.4);
+}
+
+.music h1{
+    /* font-family: 'Permanent Marker', cursive; */
+    /* /* font-family: 'Philosopher', sans-serif; */
+    font-family: 'Actor', sans-serif;
+    letter-spacing: 0.2rem;
+    font-size: 40px;
+    text-align: center;
+}
+.music h1{
+    animation: neon 3s ease infinite;
+    -moz-animation: neon 3s ease infinite;
+    -webkit-animation: neon 3s ease infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 0.2vw #e4eb81, 0 0 1vw #afeb60, 0 0 5vw #97ecf2, 0 0 5vw #f5ab44, 0 0 .2vw #fea324, .3vw .3vw 0.1vw #b5f27f;
+      color: #faf9e1;
+    }
+    50% {
+      text-shadow: 0 0 .2vw #fecc42, 0 0 0.5vw #c2fcb1, 0 0 2vw #f2f763, 0 0 2vw #f3c99d, 0 0 .1vw #be94ed, .2vw .2vw 0.08vw #f1de60;
+      color: #e3e4d7;
+    }
+  }
+
+/* add anime class to animate */
+.anime{
+    animation: rotatePlayer 4s linear  infinite ;
+}
+
+@keyframes  rotatePlayer {
+      from{
+          transform: rotate(0deg);
+    }
+      to{
+        transform: rotate(360deg);
+      }
+}
+
+
+
+
+
+
